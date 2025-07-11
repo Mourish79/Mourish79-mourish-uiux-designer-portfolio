@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Mourish, a UI/UX Designer specializing in user research, prototyping, and design." />
+  <meta name="keywords" content="UI/UX, Designer, Portfolio, Mourish, User Research, Prototyping" />
+  <meta name="author" content="Mourish" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Mourish Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Geologica&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body class="full-background">
+  <header class="nav-header" role="banner">
+    <nav class="nav-container" role="navigation" aria-label="Main navigation">
+      <ul class="nav-menu" role="menubar">
+        <li role="menuitem"><a href="#home">Home</a></li>
+        <li role="menuitem"><a href="#works">My Works</a></li>
+        <li role="menuitem"><a href="#resume">Professional Experience</a></li>
+        <li role="menuitem"><a href="#container11">How Work</a></li>
+        <li role="menuitem"><a href="#contact-section">Contact Info</a></li>
+      </ul>
+      <div class="cv-btn-wrapper">
+        <div class="glow-bg"></div>
+       <a href="https://drive.google.com/file/d/1ccCEJml1h_BMgTSb-izLORXHxECaCoiq/view?usp=drive_link" 
+   class="cv-btn" 
+   aria-label="Download my CV" 
+   target="_blank" 
+   rel="noopener noreferrer">
+          My CV 
+          <span class="arrow">
+            <svg aria-hidden="true" viewBox="0 0 10 10" height="10" width="10" fill="none">
+              <path d="M0 5h7" class="arrow-line"></path>
+              <path d="M1 1l4 4-4 4" class="arrow-tip"></path>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+
+
+<!-- Scroll to Top Button with Image -->
+<button id="scrollTopBtn" aria-label="Scroll to Top">
+  <img src="Vector (3).svg" alt="Scroll to top" />
+</button>
+<script>
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  window.addEventListener("scroll", () => {
+    scrollBtn.style.display = window.scrollY > 200 ? "block" : "none";
+  });
+</script>
+
+
+  
+
+  <main class="content" role="main">
+    <!-- Hero Section -->
+    <section class="hero-section" id="home" aria-label="Hero Section" data-aos="fade-in">
+      <div class="container">
+        <div class="left" data-aos="fade-right">
+          <h1><span class="gray">I’m</span> <span class="blue">Mourish</span></h1>
+          <div class="typing-slider">
+</div>
+
+<h2 class="typing-heading">UI/UX <span class="typewriter-wrapper"><span class="typewriter"></span></span></h2>
+
+<!-- Typed.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const wrapper = document.querySelector(".typewriter-wrapper");
+
+    new Typed(".typewriter", {
+      strings: ["Designer", "Understand", "Creative"],
+      typeSpeed: 80,
+      backSpeed: 40,
+      backDelay: 2000,
+      loop: true,
+      showCursor: true,
+      cursorChar: "|",
+      preStringTyped: function () {
+        wrapper.classList.add("active");
+      },
+      onStringTyped: function () {
+        setTimeout(() => wrapper.classList.remove("active"), 2000);
+      }
+    });
+  });
+</script>
+
+
+
+
+          <p class="skills">
+           UI/UX Product Designer <span>-</span> User Research <span>-</span> Design Systems <span>-</span> Prototyping <span>-</span> Adobe Photoshop <span>-</span> Adobe XD <span>-</span> Video Editing 
+          </p>
+          
+      
+          <!-- Mail Me Button -->
+<a href="mailto:mourishr723@gmail.com" class="mail-btn">
+  <img src="Icon-Set.svg" alt="Mail Icon" class="mail-icon" />
+  <span>Mail Me</span>
+</a>
+
+
+<ul class="wrapper">
+  <!-- Behance -->
+  <li class="icon behance">
+    <span class="tooltip">Behance</span>
+    <a href="https://www.behance.net/mourishmourish" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-behance"></i>
+    </a>
+  </li>
+
+  <!-- LinkedIn -->
+  <li class="icon linkedin">
+    <span class="tooltip">LinkedIn</span>
+    <a href="https://www.linkedin.com/in/mourish-r-684b06298/" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </li>
+
+  <!-- Facebook -->
+  <li class="icon facebook">
+    <span class="tooltip">Facebook</span>
+    <a href="https://www.facebook.com/mourish.mourish.378" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+  </li>
+</ul>
+
+
+<!-- Font Awesome CDN (required) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+
+        </div>
+        <div class="profile-container" data-aos="fade-left">
+          <img src="Ellipse 1 (1).png" alt="Profile picture of Mourish" class="profile-pic" loading="lazy" />
+          <div class="bg-title"><b>UI/UX<br/>DESIGNER</b></div>
+        </div>
+      </div>
+    </section>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<div class="portfolio-container">
+  <section class="portfolio-section" id="works" aria-label="Portfolio Section" data-aos="fade-up">
+    
+    <div class="filter-buttons" role="toolbar" aria-label="Filter portfolio items">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="case" aria-pressed="false">Case Studies</button>
+      <button class="filter-btn" data-filter="ui" aria-pressed="false">UI Design</button>
+      <button class="filter-btn" data-filter="wp" aria-pressed="false">Wordpress</button>
+    </div>
+
+    <div class="card-container" role="region" aria-label="Portfolio items">
+      
+      <div class="image-box" data-category="case" data-aos="zoom-in">
+            <a href="https://www.figma.com/design/mPRA5MDgobhDTZhGqlV1rW/Management-Service---Application?node-id=1021-26367&p=f&t=fDsiR8U7Cx8GYA6U-0" target="_blank" rel="noopener noreferrer">
+        <img src="FF (2).svg" alt="Case Study: UIOne" loading="lazy" />
+       <div class="icon-overlay">
+  <div class="icon-overlay"><i class="fas fa-search"></i></div>
+</div>
+</a>
+      </div>
+
+
+      <div class="image-box" data-category="ui" data-aos="zoom-in" data-aos-delay="100">
+        <a href="https://www.behance.net/gallery/229547477/E-Commerece-Musical-Website" target="_blank" rel="noopener noreferrer">
+        <img src="Cover (3).svg" alt="UI Design: UIOne" loading="lazy" />
+        <div class="icon-overlay"><i class="fas fa-search"></i></div>
+        </a>
+      </div>
+
+      <div class="image-box" data-category="ui" data-aos="zoom-in" data-aos-delay="200">
+           <a href="https://www.behance.net/gallery/229620365/Health-Care" target="_blank" rel="noopener noreferrer">
+        <img src="ns2.svg" alt="UI Design: UITwo" loading="lazy" />
+        <div class="icon-overlay"><i class="fas fa-search"></i></div>
+      </a>
+      </div>
+
+      <div class="image-box" data-category="ui" data-aos="zoom-in" data-aos-delay="300">
+           <a href="https://www.behance.net/gallery/229620663/AI-Landing-Page" target="_blank" rel="noopener noreferrer">
+        <img src="Cover (4).svg" alt="UI Design: UIThree" loading="lazy" />
+        <div class="icon-overlay"><i class="fas fa-search"></i></div>
+         </a>
+      </div>
+
+      <div class="image-box" data-category="ui" data-aos="zoom-in" data-aos-delay="400">
+           <a href="https://www.behance.net/gallery/229678651/Rental-App-RentBiss" target="_blank" rel="noopener noreferrer">
+        <img src="Rental (1).svg" alt="UI Design: UIFour" loading="lazy" />
+        <div class="icon-overlay"><i class="fas fa-search"></i></div>
+        </a>
+      </div>
+
+      <div class="image-box" data-category="wp" data-aos="zoom-in" data-aos-delay="500">
+           <a href="https://riyalinhomemade.com/" target="_blank" rel="noopener noreferrer">
+        <img src="W (1).svg" alt="Wordpress Design: WPDesign" loading="lazy" />
+        <div class="icon-overlay"><i class="fas fa-search"></i></div>
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+</div>
+
+
+
+<section class="resume-section" id="resume">
+<div class="centered-section">
+  <h2>Professional Experience</h2>
+  <p>
+   I have nearly <b>2 years of experience </b>in designing, with <b>1.5 years focused on UI/UX design</b> and WordPress website development. My work emphasizes enhancing user experience through intuitive, responsive digital interfaces across web and mobile platforms. I combine user-centered design principles with creative visual storytelling to improve usability, engagement, and brand consistency.
+  </p>
+</div>
+  
+
+<div class="resume-container">
+
+    
+    <!-- Left Column -->
+  <div class="left-column timeline-wrapper">
+      <div class="timeline-dot"></div>
+      <div class="section-block">
+    <h3 class="section-heading with-line">Work Experience</h3>
+
+    <div class="exp-block">
+      <h3>JUNIOR UX/UI DESIGNER</h3>
+      <p class="exp-duration">August 2024 – Present</p>
+      <p><strong>Pheonix Solutions – Perundurai</strong></p>
+      <ul>
+        <li>Led UX-centered design initiatives for product-based solutions across web and mobile platforms, focusing on crafting seamless, intuitive user flows and enhancing overall usability based on user behavior and feedback.</li>
+       <li> Specialized in creating wireframes, prototypes, Responsive Designs and high-fidelity UI mockups to deliver engaging and accessible user experiences.</li>
+        <li>Designed and managed social media content, including posters and promotional materials, to drive engagement.</li>
+        <li>Developed and optimized WordPress websites, ensuring seamless functionality and user-friendly interfaces.</li>
+        <li>Managed administrative support in asset management, shift coordination, and invoice quotation processing.</li>
+       <li> Managed digital marketing activities, including maintaining social media platforms and optimizing the Google Business Profile to enhance</li>
+      </ul>
+    </div>
+
+    <div class="exp-block">
+      <h3>DESIGNING, VIDEO EDITING</h3>
+      <p class="exp-duration">July 2023 – April 2024</p>
+      <p><strong>Logical Minds IT Solutions – Rasipuram</strong></p>
+      <ul>
+        <li>Worked at Logical Minds for a total of 10 months, including 6 months of training and 4 months of professional experience.</li>
+        <li>During the training period, actively contributed to projects, gaining hands-on experience in design.</li>
+        <li>Creative IT professional with experience in design, video editing, and digital marketing.</li>
+        <li>Training and gained hands-on experience in HTML, CSS, Canva, and Figma, working collaboratively with teams on design.</li>
+         <li>Blog Creation, Flyer Creations, and Posters Creations.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+   <!-- Right Column with timeline (line + dot before heading) -->
+
+ <div class="left-column timeline-wrapper">
+      <div class="timeline-dot"></div>
+      <div class="section-block">
+        <h3 class="section-heading with-line">Summary</h3>
+        <p class="summary-name"><strong>Mourish R</strong></p>
+        <ul> <li>I am a UI/UX Designer passionate about creating effective designs and improving user experiences. My expertise includes user research, wireframing, prototyping, and visual design.</li> <li>I self-learnt UI/UX in one and a half months and completed a project involving user research, interviews, journeys, and flows, along with designs. </li> <li>I have learnt to use Figma, Photoshop, Adobe XD, and CANVA tools that I use to bring my creative visions to life. Experienced in expertise in designing, wireframing, prototyping, usability testing, programming, and client presentations</li>
+
+
+       <ul></ul>  <ul>
+
+          <li>+91 7358836386</li>
+          <li>mourishr723@gmail.com</li>
+                    <li>Rasipuram, Namakkal District, Tamil Nadu – 
+637408</li>
+        </ul>
+      </div>
+
+      <div class="timeline-dot"></div>
+      <div class="section-block">
+        <h3 class="section-heading with-line">Education</h3>
+        <div class="edu-block">
+          <h3>BACHELOR OF COMPUTER APPLICATION (BCA)</h3>
+          <p class="edu-duration">2021–2023</p>
+          <p><strong>Muthayammal College of Arts and Science
+</strong><br>Rasipuram</p>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+
+<div class="tools-section">
+  <h2>Designing Tools & Skills</h2>
+  <p>
+    Every tool is aimed at design. Based on the comfort of each tool, we build effective and creative results.
+  </p>
+</div>
+
+<div class="design-tools-section">
+  <!-- Left-side Image -->
+  <div class="tools-image-left">
+    <img src="Tool4 (4).svg" alt="Design Tools Left" />
+  </div>
+
+  <!-- Right-side Image -->
+  <div class="tools-image-right">
+    <img src="tools 6 (4).svg" alt="Design Tools Right" />
+  </div>
+</div>
+
+<div class="container11"id="container11">
+
+
+    <h2 class="section-title">How Work </h2>
+    <p class="section-description">
+      UX design (user experience design) is a digital product design methodology to solve a human problem. This human-centred design approach ensures design teams make decisions based on users’ needs 
+      rather than assumptions.
+    </p>
+
+    <h3 class="key-heading">Key considerations include:</h3>
+    
+    <div class="considerations">
+      <ul>
+        <li>Who is the product for?</li>
+        <li>What does the audience expect or look for?</li>
+        <li>Is the product designed to inform, sell, or entertain?</li>
+      </ul>
+      <ul>
+        <li>How can it stand out from competitors?</li>
+        <li>What problem is this product solving?</li>
+      </ul>
+    </div>
+  </div>
+  <section class="process-section">
+  <div class="process-container">
+
+    <div class="process-card">
+      <img src="image 119.svg" alt="Understand Icon" class="process-icon">
+      <h3>Understand</h3>
+      <p>Before you get started with any project, you need to get the basics down first. That means understanding two crucial elements.</p>
+    </div>
+
+    <div class="process-card">
+      <img src="Icon5.png" alt="Research Icon" class="process-icon">
+      <h3>Research</h3>
+      <p>Interviews – Target audience and ask pointed questions about their issues. User/Focus groups, Surveys, Usability testing.</p>
+    </div>
+
+    <div class="process-card">
+      <img src="Icon6.png" alt="Analysis Icon" class="process-icon">
+      <h3>Analysis</h3>
+      <p>User journey maps – A user journey map is a representation of the user’s interactions with your product.</p>
+    </div>
+
+    <div class="process-card">
+      <img src="image 120.svg" alt="Design Icon" class="process-icon">
+      <h3>Design</h3>
+      <p>Design enhances user interaction and navigation through structure, aesthetics, typography, and visual hierarchy.</p>
+    </div>
+
+    <div class="process-card">
+      <img src="Icon8.png" alt="Prototype Icon" class="process-icon">
+      <h3>Prototype</h3>
+      <p>A prototype is a functional model for testing and refining a product before development.</p>
+    </div>
+
+    <div class="process-card">
+      <img src="image 122.svg" alt="Analyze Again Icon" class="process-icon">
+      <h3>Analyze (again)</h3>
+      <p>How are our users responding to the product? Did it solve their issues and pain points?</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+  AOS.init({ duration: 1000, once: true });
+
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const imageBoxes = document.querySelectorAll(".image-box");
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      // Activate clicked button
+      filterButtons.forEach(btn => {
+        btn.classList.remove("active");
+        btn.setAttribute("aria-pressed", "false");
+      });
+      button.classList.add("active");
+      button.setAttribute("aria-pressed", "true");
+
+      const filter = button.getAttribute("data-filter");
+
+      imageBoxes.forEach(box => {
+        const category = box.getAttribute("data-category");
+
+        if (filter === "all" || category === filter) {
+          box.style.display = "block";
+        } else {
+          box.style.display = "none";
+        }
+      });
+    });
+  });
+
+  // Trigger "All" filter by default
+  document.querySelector('[data-filter="all"]').click();
+});
+
+  </script>
+<div class="contact-section" id="contact-section">
+
+
+  <h2><span class="highlight">Contact</span> Information</h2>
+  <p class="phone">+91 <strong>7358836386</strong></p>
+  <p class="email"><a href="mailto:mourishr723@gmail.com">mourishr723@gmail.com</a></p>
+  <p class="address">Rasipuram, Namakkal District, Tamil Nadu – 637408</p>
+
+   
+<ul class="wrapper1">
+  <!-- Behance -->
+  <li class="icon behance">
+    <span class="tooltip">Behance</span>
+    <a href="https://www.behance.net/mourishmourish" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-behance"></i>
+    </a>
+  </li>
+
+  <!-- LinkedIn -->
+  <li class="icon linkedin">
+    <span class="tooltip">LinkedIn</span>
+    <a href="https://www.linkedin.com/in/mourish-r-684b06298/" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </li>
+
+  <!-- Facebook -->
+  <li class="icon facebook">
+    <span class="tooltip">Facebook</span>
+    <a href="https://www.facebook.com/mourish.mourish.378" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+  </li>
+</ul>
+
+
+
+  <footer class="copyright">
+    © 2025 Mourish_UI/UX_Designer. All rights reserved.
+  </footer>
+</div>
+
+
+
+
+  
+</body>
+</html>
