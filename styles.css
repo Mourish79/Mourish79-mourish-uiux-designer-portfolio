@@ -782,40 +782,52 @@ h3 {
   justify-content: space-between;
   align-items: center;
   gap: 60px;
-  flex-wrap: wrap;
   padding: 40px 20px;
   background-color: #F6F8FC;
+  flex-wrap: nowrap;
 }
 
-/* Left-side Image */
 .tools-image-left img,
-/* Image Section */
-.tools-graphic img {
-  width: 500px;
-  max-width: 100%;
-  padding: auto;
-  padding-left: 150px;
-
-}
 .tools-image-right img {
-  width: 520px;
+  width: 500px;
   max-width: 100%;
   height: auto;
   object-fit: contain;
-   padding-right: 150px;
 }
 
-/* Optional responsive adjustments */
-@media (max-width: 768px) {
+/* Adjust left image */
+.tools-image-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-left: 40px;
+}
+
+/* Adjust right image */
+.tools-image-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-right: 40px;
+}
+
+/* Responsive stacking below 900px */
+@media screen and (max-width: 900px) {
   .design-tools-section {
     flex-direction: column;
     text-align: center;
-    gap: 30px;
+    gap: 40px;
+  }
+
+  .tools-image-left,
+  .tools-image-right {
+    padding: 0;
   }
 
   .tools-image-left img,
   .tools-image-right img {
     width: 80%;
+    max-width: 380px;
   }
 }
 
